@@ -33,21 +33,21 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 
 ### Commands
 
-composer create-project laravel/laravel=6 your-project-name
-php artisan make:migration create_blog_category_table --create=blog_category
-php artisan make:migration create_cache_table --create=cache
+- composer create-project laravel/laravel=6 your-project-name
+- php artisan make:migration create_blog_category_table --create=blog_category
+- php artisan make:migration create_cache_table --create=cache
 
-php artisan make:controller Blog/BlogCategoryController --resource --model=Blog/BlogCategory
+- php artisan make:controller Blog/BlogCategoryController --resource --model=Blog/BlogCategory
 
-php artisan migrate:fresh --seed
-php artisan route:list
-php artisan make:seeder UsersTableSeeder
-php artisan make:model Cat -mcr
+- php artisan migrate:fresh --seed
+- php artisan route:list
+- php artisan make:seeder UsersTableSeeder
+- php artisan make:model Cat -mcr
 
-php artisan make:command DemoCron --command=demo:cron
-php artisan schedule:run
+- php artisan make:command DemoCron --command=demo:cron
+- php artisan schedule:run
 
-php artisan optimize:clear
+- php artisan optimize:clear
 
 ## License
 
