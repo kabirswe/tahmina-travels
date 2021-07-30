@@ -1,0 +1,1 @@
+jQuery(function(e){e(".show-sidebar").click(function(){e(".sidebar-menu").toggleClass("open")})});

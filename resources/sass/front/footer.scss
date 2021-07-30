@@ -1,0 +1,64 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+.footer{
+    background: $black_4F;
+    color:$yellow_FF;
+    display: flex;
+    justify-content: space-around;
+    padding:121px 0px 121px 0px;
+    h3{
+        @include font_style(21,null, 400, 18px, 0.05em);
+        margin:0px;
+        padding: 0px 0px 18px 0px;
+    }
+    ul{
+        margin:0px;
+        padding:0px;
+        li{
+            list-style: none;
+            padding:0px;
+            a{
+                text-decoration: none;
+                @include font_style(15px, $yellow_FF, 200, 20px, 0.05em);
+            }
+
+        }
+    }
+    .contact{
+        p{
+            @include font_style(15px, null, 200, 20px, 0.05em);
+            margin: 0px;
+        }
+    }
+    .find-us{
+        ul{
+            display: flex;
+            li{
+                list-style: none;
+                padding: 6px 12px;
+                margin-left:12px;
+                background: $yellow_FF;
+                border-radius: 50%;
+                color: $black;
+                &:first-child{
+                    margin-left: 0px;
+                }
+                img{
+                    width: 12px;
+                    height: 12px;
+                }
+            }
+        }
+    }
+}
+.footer-bottom{
+    padding: 40px 0px 40px 0px;
+    display: flex;
+    justify-content: center;
+    background: $white_F8;
+    p{
+        margin:0px;
+        @include font_style(15px, $black, 200, 20px, 0.05em);
+
+    }
+}

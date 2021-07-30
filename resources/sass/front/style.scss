@@ -1,0 +1,85 @@
+@import "./variables.scss";
+@import "./mixins.scss";
+
+//Home page style start
+body {
+	margin:0px;
+	padding:0px;
+	font-family: $avenir-regular;
+    input:-internal-autofill-selected {
+        background-color: transparent !important;
+        color:transparent;
+    }
+    .col-half{
+        flex: 0 1 48%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .col-45{
+        flex: 0 1 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+//Home page  style end
+}
+
+p, h1, h2 {
+	margin-bottom: 0;
+}
+
+a {
+	text-decoration: none;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+dl, ol, ul {
+	margin-bottom: 0;
+}
+
+.create-btn {
+    @include action_button('green');
+}
+.main-content{
+    font-family: $roboto;
+    .data-table{
+        .btn {
+            padding: 0;
+            padding-right: 10px;
+            &.btn-dt-delete {
+                @include action_button('red');
+                padding: 5px 10px;
+                height: 22px;
+            }
+            &.btn-dt-edit {
+                @include action_button('yellow');
+                padding: 5px 10px;
+                height: 22px;
+                margin-right: 20px;
+            }
+        }
+    
+    }
+    .custom-select {
+        height: calc(1.5em + .75rem + 2px) !important;
+        padding: .375rem 1.75rem .375rem .75rem !important;
+    }
+    #data-table_filter .form-control{
+        border: 1px solid #000 !important;
+    }
+    .icon-img {
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+}
+.error_msg{
+    color:red;
+}
+    

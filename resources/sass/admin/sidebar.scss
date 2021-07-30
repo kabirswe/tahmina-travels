@@ -1,0 +1,49 @@
+@import "./mixins.scss";
+@import "./variables.scss";
+
+.dashboard-sidebar {
+    bottom: 0;
+    display: block;
+    width: 250px;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    border-right: 1px solid #e3ebf6;
+    .navbar-brand {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        img {
+            height: 60px;
+        }
+    }
+    .nav-link {
+        padding: 0;
+        padding-left: 3.25rem;
+        position: relative;
+        color: #6e84a3;
+        height: 32px;
+        display: flex;
+        align-items: center;
+        margin-bottom: 4px;
+        transition: all ease-in-out .35s;
+        font-size: 13px;
+        .hydrated {
+            margin-right: 10px;
+            margin-bottom: 6px;
+        }
+        &.active, &:hover {
+            background: #2c7be51c;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                height: 32px;
+                width: 2px;
+                background-color: $blue;
+            }
+        }
+    }
+}
